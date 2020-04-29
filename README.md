@@ -41,11 +41,11 @@ sheet = SpriteSheet:new(path, hFrames , vFrames)
 -- hFrames (number) : number of horizontal frames in the image
 -- vFrames (number) : number of vertical frames in the image
 
-anim = Animation:new(sheet, start , end, wait, loop)
+anim = Animation:new(sheet, startIndex , endIndex, wait, loop)
 
---sheet(SrpiteSheet) : spritesheet for the animation to draw from
--- start(number): starting index of the animation in the spritesheet
--- end(number): ending index of the animation in the spritesheet
+-- sheet(SrpiteSheet) : spritesheet for the animation to draw from
+-- startIndex(number): starting index of the animation in the spritesheet
+-- endIndex(number): ending index of the animation in the spritesheet
 -- wait(number): time to wait for each frame
 -- loop(boolean): whether to loop the aniamtion or freeze on the last frame.
 
