@@ -12,12 +12,11 @@ easily using the animation library.
 
 ``` lua
 
-local SpriteSheet = require("srpite")
 local Animation = require("anim")
 
 -- in love.load() :
 
-sheet = SpriteSheet:new('images/image.png', 2 , 2)
+sheet = Animation.newSpriteSheet('images/image.png', 2 , 2)
 anim1 = Animation:new(sheet, 1, 2, 0.1, true)
 
 -- in love.draw():
@@ -35,7 +34,7 @@ anim1.update(dt)
 creating a spritesheet and animating it:
 
 ```lua
-sheet = SpriteSheet:new(path, hFrames , vFrames)
+sheet = Animation.newSpriteSheet(path, hFrames , vFrames)
 
 -- path (string) : path to the source image
 -- hFrames (number) : number of horizontal frames in the image
