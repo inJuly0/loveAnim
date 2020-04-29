@@ -1,4 +1,4 @@
-local Sprite = require("src/SpriteSheet")
+local Sprite = require("src/srpite")
 local Animation = require("src/anim")
 
 local img, anim
