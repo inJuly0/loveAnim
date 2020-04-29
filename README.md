@@ -1,7 +1,7 @@
 # loveAnim
 An animation library for the [LÖVE](https://love2d.org/) game framework in lua.
-It takes in a sprite sheet preferably of a single game entity
-(monster, item, anything) and generates a spritesheet which can then be animated
+It takes in a spritesheet preferably of a single game entity
+(monster, item, anything) and generates a table which can then be animated
 easily using the animation library.
 
 ## Usage
