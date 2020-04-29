@@ -29,3 +29,24 @@ anim1.show()
 anim1.update(dt)
 
 ```
+
+## Reference
+
+creating a spritesheet and animating it:
+
+```lua
+sheet = SpriteSheet:new(path, hFrames , vFrames)
+
+-- path (string) : path to the source image
+-- hFrames (number) : number of horizontal frames in the image
+-- vFrames (number) : number of vertical frames in the image
+
+anim = Animation:new(sheet, start , end, wait, loop)
+
+--sheet(SrpiteSheet) : spritesheet for the animation to draw from
+-- start(number): starting index of the animation in the spritesheet
+-- end(number): ending index of the animation in the spritesheet
+-- wait(number): time to wait for each frame
+-- loop(boolean): whether to loop the aniamtion or freeze on the last frame.
+
+```
